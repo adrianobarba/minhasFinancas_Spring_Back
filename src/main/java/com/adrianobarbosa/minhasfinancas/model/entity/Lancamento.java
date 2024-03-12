@@ -2,7 +2,6 @@ package com.adrianobarbosa.minhasfinancas.model.entity;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
-import java.util.Objects;
 
 import javax.persistence.Column;
 import javax.persistence.Convert;
@@ -21,12 +20,16 @@ import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
 import com.adrianobarbosa.minhasfinancas.model.enums.StatusLancamento;
 import com.adrianobarbosa.minhasfinancas.model.enums.TipoLancamento;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "lancamento", schema = "financas")
 public class Lancamento {
 	
