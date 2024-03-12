@@ -48,7 +48,7 @@ public class Lancamento {
 	private Integer ano;
 	
 	@ManyToOne
-	@JoinColumn(name = "if_usuario")
+	@JoinColumn(name = "id_usuario")
 	private Usuario usuario;
 	
 	@Column(name = "valor")
